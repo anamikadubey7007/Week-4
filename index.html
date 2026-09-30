@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Cafe - a simple accessible cafe webpage.">
+  <title>My Cafe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home">My Cafe</a>
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="hero" aria-labelledby="home-title">
+      <div class="container">
+        <h1 id="home-title">Welcome to My Cafe</h1>
+        <p>Fresh coffee, simple food and a comfortable place to relax.</p>
+        <a class="button" href="#menu">View Menu</a>
+      </div>
+    </section>
+
+    <section id="about" class="section container" aria-labelledby="about-title">
+      <h2 id="about-title">About Us</h2>
+      <p>My Cafe is a small cafe project created as part of a frontend web development internship.</p>
+    </section>
+
+    <section id="menu" class="section section-light" aria-labelledby="menu-title">
+      <div class="container">
+        <h2 id="menu-title">Our Menu</h2>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <span class="item-icon" aria-hidden="true">☕</span>
+            <h3>Coffee</h3>
+            <p>Freshly prepared hot coffee.</p>
+            <p class="price">₹80</p>
+          </article>
+          <article class="menu-card">
+            <span class="item-icon" aria-hidden="true">🥪</span>
+            <h3>Sandwich</h3>
+            <p>A simple and tasty vegetable sandwich.</p>
+            <p class="price">₹120</p>
+          </article>
+          <article class="menu-card">
+            <span class="item-icon" aria-hidden="true">🍰</span>
+            <h3>Cake</h3>
+            <p>A soft slice of fresh cake.</p>
+            <p class="price">₹100</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact Us</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button class="button" type="submit">Send Message</button>
+        <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 My Cafe. Created for frontend internship.</p>
+  </footer>
+</body>
+</html>
